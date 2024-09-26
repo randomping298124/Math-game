@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #cceeff, #ffcccb); /* Gradient background */
+            position: relative;
+            overflow: hidden; /* Hide overflowing shapes */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 1; /* Ensure content is above the background */
+        }
+
+        h1 {
+            font-size: 4em; /* Increased title size */
+            color: #333; /* Dark gray */
+        }
+
+        .start-button {
+            display: inline-block;
+            padding: 15px 30px; /* Increased padding for a larger button */
+            font-size: 2em; /* Increased button text size */
+            color: white;
+            background-color: #007bff; /* Blue button */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .start-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Decorative shapes */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .circle1 {
+            width: 200px;
+            height: 200px;
+            background-color: #ffcccb;
+            top: -50px;
+            left: -50px;
+        }
+
+        .circle2 {
+            width: 150px;
+            height: 150px;
+            background-color: #cceeff;
+            bottom: -75px;
+            right: -75px;
+        }
+
+        .circle3 {
+            width: 100px;
+            height: 100px;
+            background-color: #ffcccb;
+            top: 100px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Game</h1>
+        <a href="math game.html" class="start-button">Start</a>
+    </div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+</body>
+</html>
